@@ -19,7 +19,7 @@ intents.guilds = True
 intents.voice_states = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-# Updated YTDL options
+# YTDL options
 ytdl_format_options = {
     'format': 'bestaudio/best',
     'outtmpl': '%(extractor)s-%(id)s-%(title)s.%(ext)s',
@@ -42,7 +42,7 @@ ytdl_format_options = {
     'keepvideo': False
 }
 
-# Updated FFmpeg options
+# FFmpeg options
 ffmpeg_options = {
     'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
     'options': '-vn'
