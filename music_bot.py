@@ -213,4 +213,4 @@ if __name__ == "__main__":
         bot.run(token)
     else:
         print("Token not found in environment variables, using direct token")
-        bot.run('RePlAcE_ThIs') #REPLACE THIS
+        bot.run('#') #REPLACE THIS
