@@ -37,7 +37,7 @@ Before running the bot, make sure you have the following:
    ```
 5. Run the bot:
    ```bash
-   python bot.py
+   python music_bot.py
    ```
 ## Commands
 ### General Commands
