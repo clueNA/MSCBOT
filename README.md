@@ -1,3 +1,5 @@
+![MSCBOT](https://socialify.git.ci/clueNA/MSCBOT/image?font=KoHo&language=1&name=1&owner=1&pattern=Transparent&stargazers=1&theme=Dark)
+
 # Discord Music Bot
 
 A simple Discord bot to play music from YouTube, manage a queue, and control playback in voice channels.
