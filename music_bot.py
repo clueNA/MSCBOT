@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 print("Current working directory:", os.getcwd())
 print("Attempting to load .env file...")
-load_dotenv("C:\\Users\\rupan\\PycharmProjects\\MSCBOT\\.env")  # Replace with your .env file path
+load_dotenv(".env")  # Replace with your .env file path
 print("Environment variables loaded")
 print("Token value:", os.getenv('DISCORD_TOKEN'))
 
