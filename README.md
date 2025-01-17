@@ -26,18 +26,22 @@ Before running the bot, make sure you have the following:
 ## Setup
 
 1. Clone the repository or copy the script.
-2. Install the required dependencies:
+   ```bash
+   git clone https://github.com/clueNA/MSCBOT
+   ```
+3. Install the required dependencies:
    ```bash
    pip install discord.py yt-dlp python-dotenv pynacl
-3. Install `ffmpeg`:
+   ```
+4. Install `ffmpeg`:
    - On Windows: Download from [FFmpeg](https://www.ffmpeg.org/) and add to PATH.
    - On macOS: Use Homebrew: `brew install ffmpeg`.
    - On Linux: Install via your package manager: `sudo apt install ffmpeg`.
-4. Create a `.env` file in the project directory with your Discord bot token:
+5. Edit the `.env` file in the project directory with your Discord bot token:
    ```bash
-   DISCORD_TOKEN=your_bot_token_here
+   echo DISCORD_TOKEN=your_token_here > .env
    ```
-5. Run the bot:
+6. Run the bot:
    ```bash
    python music_bot.py
    ```
