@@ -37,7 +37,7 @@ Before running the bot, make sure you have the following:
    - On Windows: Download from [FFmpeg](https://www.ffmpeg.org/) and add to PATH.
    - On macOS: Use Homebrew: `brew install ffmpeg`.
    - On Linux: Install via your package manager: `sudo apt install ffmpeg`.
-5. Edit the `.env` file in the project directory with your Discord bot token:
+5. Create a `.env` file in the project directory with your Discord bot token:
    ```bash
    echo DISCORD_TOKEN=your_token_here > .env
    ```
