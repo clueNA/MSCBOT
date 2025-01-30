@@ -91,9 +91,17 @@ Before running the bot, make sure you have the following:
       <td><code>!skip</code></td>
       <td>Skip the currently playing song.</td>
     </tr>
+     <tr>
+      <td><code>!np</code></td>
+      <td>Shows information about the currently playing track</td>
+    </tr>
     <tr>
       <td><code>!clear</code></td>
       <td>Clear the queue.</td>
+    </tr>
+    <tr>
+      <td><code>!loop</code></td>
+      <td>Changes loop mode (off/track/queue).</td>
     </tr>
     <tr>
       <td><code>!pause</code></td>
