@@ -430,11 +430,22 @@ async def remove(ctx, position: int):
     await ctx.send(f"✂️ Removed: **{removed.title}**")
 
 
-if __name__ == "__main__":
+async def main():
     token = os.getenv('DISCORD_TOKEN')
     if not token:
         print("Error: DISCORD_TOKEN not found in environment variables")
-        exit(1)
+        return
+    
+    try:
+        async with bot:
+            bot.loop.create_task(check_inactive())
+            await bot.start(token)
+    except KeyboardInterrupt:
+        print("Shutting down gracefully...")
+        await bot.close()
+    except Exception as e:
+        print(f"Error starting bot: {e}")
+        await bot.close()
 
-    bot.loop.create_task(check_inactive())
-    bot.run(token)
+if __name__ == "__main__":
+    asyncio.run(main())
